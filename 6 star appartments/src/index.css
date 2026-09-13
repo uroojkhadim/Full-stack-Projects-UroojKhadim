@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    scroll-behavior: smooth;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  html.light {
+    color-scheme: light;
+  }
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Subtle architectural borders & surfaces */
+.surface-card {
+  @apply bg-white dark:bg-[#0C1424] border border-[#E7E2D8] dark:border-[#182438] transition-colors duration-200;
+}
+
+.surface-card-elevated {
+  @apply bg-[#FAF8F5] dark:bg-[#101A2E] border border-[#E0DAD0] dark:border-[#1E2D47] transition-colors duration-200;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B08B44 0%, #C5A059 50%, #8E6E32 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .gold-gradient-text {
+  background: linear-gradient(135deg, #FDFBF7 0%, #DFC38A 40%, #C5A059 80%, #A37E36 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Sleek Scrollbar adapting to theme */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #060B13;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #1B2942;
+  border-radius: 4px;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #F1ECE3;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}

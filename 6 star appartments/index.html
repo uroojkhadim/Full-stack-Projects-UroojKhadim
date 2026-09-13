@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="./images/logo/WhatsApp Image 2026-09-08 at 6.45.07 PM.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6 STARS HOSPITALITY | 6 Star Centaurus Apartments | Islamabad</title>
+    <meta name="description" content="6 STARS HOSPITALITY — Exceptional Stays • Memorable Experiences. Luxury serviced apartments and commercial suites at The Centaurus, Islamabad, Pakistan." />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- Google Fonts: Outfit (Display & Headings) & Inter (Body & UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Anti-Theme-Flash Script -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('6star_theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark) || !saved) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-brand-cream-50 text-brand-navy-950 dark:bg-brand-navy-950 dark:text-slate-100 font-body antialiased selection:bg-brand-gold-500 selection:text-brand-navy-950 overflow-x-hidden min-h-screen transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
