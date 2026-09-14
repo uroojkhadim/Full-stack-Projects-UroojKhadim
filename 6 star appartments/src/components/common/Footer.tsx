@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
     { label: 'About', path: '/#about', target: 'about' },
     { label: 'Services', path: '/#services', target: 'services' },
     { label: 'Properties & Rooms', path: '/#properties', target: 'properties' },
-    { label: 'Gallery (132 Photos)', path: '/#gallery', target: 'gallery' },
+    { label: 'Gallery (20 Photos)', path: '/#gallery', target: 'gallery' },
     { label: 'Contact Concierge', path: '/#contact', target: 'contact' },
   ];
 
